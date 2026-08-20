@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <h1 class="nav-brand">Formulário de Inscrição/Cadastro</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="singup">
+            <h3>1.Dados Pessoais</h3>
+            <form action="/obrigado.html" method="POST">
+            <div>
+                <label for="ctrl-name">Nome Completo *</label>
+                <input type="nome" name="name" id="ctrl-name" placeholder="Ex: Maria Silva" required>
+            </div>
+            <div>
+                <label for="ctrl-email"> E-mail *</label>
+                <input type="email" name="e-mail" id="ctrl-email" placeholder="Ex: maria@email.com" required>
+            </div>
+            <div>
+                <label for="ctrl-tell">Telefone/WhatsApp *</label>
+                <input type="tell" name="tell" id="ctrl-tell" placeholder="(11) 99999-9999" pattern="\[0-9\]{2}\s?[0-9]\{4,5}-?[0-9\]{4}">
+            </div>
+            <div>
+                <label for="ctrl-date">Data de Nascimento *</label>
+                <input type="date" name="date" id="ctrl-date" placeholder="dd/mm/aaaa">
+            </div>
+            </form>
+        </section>
+        <section>
+            <h3>2.Preferênciasve Perfil</h3>
+            <form action="/obrigado.html" method="POST">
+                <div>
+                    <label for="ctrl-interesse">Área de Interesse *</label>
+                    <section>
+                    <select name="interest" id="ctrl-interest" required></select>
+                    <option value="">Selecionar uma opção</option>
+                    <option value="adm">ADM</option>
+                    <option value="gestao">Gestão</option>
+                    <option value=""></option>
+                    </section>
+                </div>
+                <div>
+                    <label for="ctrl-interesse">Nível de Experiência</label>
+                    <div>
+                        <input type="checkbox" name="nivel" id="ctrl-nivel-iniciante" value="iniciante">
+                        <label for="ctrl-nivel-iniciante">Iniciante</label>
+                        <input type="checkbox" name="nivel" id="ctrl-nivel-intermediario" value="intermediario">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
