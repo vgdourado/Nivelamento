@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form action="cadastroRealizado.html" method="POST">
+        <h2>Formulário de Inscrição</h2>
+        <fieldset>
+            <legend>1. Dados Pessoais</legend>
+            <div class="form-grup">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Vitória Dourado">
+            </div>
+            <div class="form-grup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="vitoria.dourado@exemple.com">
+            </div>
+            <div class="form-grup">
+                <label for="telefone">Telefone:</label>
+                <input type="tell" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-grup">
+                <label for="nascimento">Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Preferências Pessoais</legend>
+                <div class="form-grup">
+                    <label for="area">Área de Interesse:</label>
+                    <select name="area" id="area" required>
+                        <option value="">Selecione</option>
+                        <option value="frontend">Desenvimento Frontend</option>
+                        <option value="backend">Desenvimento Dackend</option>
+                        <option value="disingn">UI/UX</option>
+                    </select>                   
+                </div>
+
+                <div class="form-grup">
+                    <label for="experiencia">Nivel de Experiência:</label>
+                    <input type="radio" id="ex-experiente" name="nivel" value="iniciante">
+                    <label for="ex-experiencia">Iniciante</label>
+                    <input type="radio" id="ex-intermediario" name="nivel" value="intermediario">
+                    <label for="ex-intermediario">Intermediário</label> 
+                    <input type="radio" id="ex-avancado" name="nivel" value="avancado">
+                    <label for="ex-avancado">Avançado</label>              
+                </div>
+
+                <div class="form-grup">
+                    <label for="bio">Apresentação / Biografia:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Escreva um pouco sobre você..."></textarea>
+                </div>
+            </fieldset>
+
+                <div class="form-grup">
+                    <label for="newsletter">Deseja receber nossa newsletter?</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">
+                        Deseja receber a novidades e atualizações por e-mail.
+                    </label>
+                </div>
+
+                <div class="form-grup">
+                    <button type="submit">Concluir Cadastro</button>
+                    <button type="reset">Limpar</button>
+                </div>
+
+    </form>
+    </form>
+    
+</body>
+</html>

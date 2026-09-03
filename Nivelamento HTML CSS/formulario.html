@@ -39,21 +39,28 @@
             <form action="/obrigado.html" method="POST">
                 <div>
                     <label for="ctrl-interesse">Área de Interesse *</label>
-                    <section>
-                    <select name="interest" id="ctrl-interest" required></select>
-                    <option value="">Selecionar uma opção</option>
-                    <option value="adm">ADM</option>
-                    <option value="gestao">Gestão</option>
-                    <option value=""></option>
+                        <section>
+                        <select name="interest" id="ctrl-interest" required>
+                        <option value="">Selecionar uma opção</option>
+                        <option value="adm">ADM</option>
+                        <option value="gestao">Gestão</option>
+                        <option value=""></option>
                     </section>
                 </div>
-                <div>
-                    <label for="ctrl-interesse">Nível de Experiência</label>
-                    <div>
-                        <input type="checkbox" name="nivel" id="ctrl-nivel-iniciante" value="iniciante">
-                        <label for="ctrl-nivel-iniciante">Iniciante</label>
-                        <input type="checkbox" name="nivel" id="ctrl-nivel-intermediario" value="intermediario">
-                    </div>
+                <section>
+                    <form>
+                      <div>
+                         <label for="ctrl-interesse">Nível de Experiência</label>
+                          <div>
+                           <input type="checkbox" name="nivel" id="ctrl-nivel-iniciante" value="iniciante">
+                           <label for="ctrl-nivel-iniciante">Iniciante</label>
+                           <input type="checkbox" name="nivel" id="ctrl-nivel-intermediario" value="intermediario">
+                           <label for="ctrl-nivel-intermediario">Intermediário</label>
+                           <input type="checkbox" name="nivel" id="ctrl-nivel-avancado" value="avancado">
+                          <label for="ctrl-nivel-avancado">Avançado</label>
+                       </div>
+                    </form>
+                    </section>
                 </div>
             </form>
         </section>
